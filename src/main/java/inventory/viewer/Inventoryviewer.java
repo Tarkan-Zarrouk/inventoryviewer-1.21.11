@@ -9,18 +9,19 @@ import net.minecraft.resources.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import inventory.viewer.command.InventoryToggleCommand;
 import inventory.viewer.hud.InventoryHUDElement;
-
 public class InventoryViewer implements ModInitializer, ClientModInitializer {
 	public static final String MOD_ID = "inventoryviewer";
 	public static Minecraft mc = Minecraft.getInstance();
-	private static final Identifier HUD_ELEMENT_IDENTIFIER = id(MOD_ID);
+	public static final Identifier HUD_ELEMENT_IDENTIFIER = id(MOD_ID);
 
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	@Override
 	public void onInitialize() {
 		LOGGER.info("Hello Fabric world!");
+		InventoryToggleCommand.init();
 	}
 
 	public static Identifier id(String path) {
@@ -29,6 +30,6 @@ public class InventoryViewer implements ModInitializer, ClientModInitializer {
 
 	@Override
 	public void onInitializeClient() {
-		HudElementRegistry.addLast(HUD_ELEMENT_IDENTIFIER, new InventoryHUDElement());
+		HudElementRegistry.addLast(InventoryViewer.HUD_ELEMENT_IDENTIFIER, new InventoryHUDElement());
 	}
 }

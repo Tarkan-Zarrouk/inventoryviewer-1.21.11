@@ -1,6 +1,7 @@
 package inventory.viewer.hud;
 
 import inventory.viewer.InventoryViewer;
+import inventory.viewer.command.InventoryToggleCommand;
 import net.fabricmc.fabric.api.client.rendering.v1.hud.HudElement;
 import net.minecraft.client.DeltaTracker;
 import net.minecraft.client.gui.GuiGraphics;
@@ -13,6 +14,9 @@ import net.minecraft.world.item.ItemStack;
 public class InventoryHUDElement implements HudElement {
     @Override
     public void render(GuiGraphics graphics, DeltaTracker tickCounter) {
+        if(!InventoryToggleCommand.isToggled) {
+            return;
+        }
         LocalPlayer mcPlayer = InventoryViewer.mc.player;
         Inventory playerInventory = mcPlayer.getInventory();
         Identifier inventoryBackgroundIdentifier = Identifier.fromNamespaceAndPath(InventoryViewer.MOD_ID, "textures/gui/inventory.png");
