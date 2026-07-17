@@ -20,7 +20,6 @@ public class InventoryViewer implements ModInitializer, ClientModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
 		InventoryToggleCommand.init();
 	}
 
