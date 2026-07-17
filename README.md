@@ -1,9 +1,3 @@
-# inventoryviewer
+# Inventory Viewer Mod for Minecraft 1.21.11
 
-## Setup
-
-For setup instructions, please see the [Fabric Documentation page](https://docs.fabricmc.net/develop/getting-started/creating-a-project#setting-up) related to the IDE that you are using.
-
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+This mod allows you to view the contents of your inventory in a more organized and user-friendly way. It provides a graphical interface that displays all items in your inventory, making it easier to manage and find what you need.
