@@ -16,7 +16,10 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"inventory.viewer.Inventoryviewer"
+			"inventory.viewer.InventoryViewer"
+		], 
+		"client": [
+			"inventory.viewer.InventoryViewer"
 		]
 	},
 	"mixins": [
