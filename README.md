@@ -9,4 +9,4 @@ This mod allows you to view the contents of your inventory in a more organized a
 
 
 ## Example Usage
-![Inventory Viewer Screenshot](/assets/2026-07-18%2011-00-20.mov)
+![Inventory Viewer Screenshot](/assets/2026-07-18%2011-00-20.mp4)
