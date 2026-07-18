@@ -3,16 +3,14 @@
 	"id": "inventoryviewer",
 	"version": "${version}",
 	"name": "inventoryviewer",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "View your inventory without clicking E!",
 	"authors": [
-		"Me!"
+		"LarryTheCat_"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://www.github.com/tarkan-zarrouk/inventoryviewer-1.21.11"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/inventoryviewer/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
