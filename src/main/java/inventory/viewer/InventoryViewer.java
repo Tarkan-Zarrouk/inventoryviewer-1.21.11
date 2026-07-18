@@ -22,10 +22,13 @@ public class InventoryViewer implements ModInitializer, ClientModInitializer {
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 	@Override
 	public void onInitialize() {
+		load();
+	}
+	public static void load() {
+		LOGGER.info("Loading InventoryViewer for 1.21.11\n\n");
 		InventoryToggleCommand.init();
 		ConfigurationManager.init();
 	}
-
 	public static Identifier id(String path) {
 		return Identifier.fromNamespaceAndPath(MOD_ID, path);
 	}
